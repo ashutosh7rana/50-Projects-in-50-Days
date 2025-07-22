@@ -30,14 +30,14 @@
     position: absolute;
     width: 70vw;
     height: 70vh;
-    background-color: red;
+    background-color: black;
     translateY(0);
-    transition: transform 0.5s ease-out;
+    transition: transform 1s ease-out 5s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hidden {
-    transform: translateY(-102%);
+    transform: translateY(102%);
 }
 
 .image img {

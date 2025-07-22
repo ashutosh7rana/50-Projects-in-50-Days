@@ -15,11 +15,15 @@ function removeActive() {
 }
 
 let timer = 3000;
-setInterval(() => {
-    const activeImage = document.querySelector('.active');
-    const nextImage = activeImage.nextElementSibling || imageSelector[0];
-    removeActive();
-    nextImage.classList.add('active');
-}, timer);
+setTimeout(() => {
+    setInterval(() => {
+        const activeImage = document.querySelector('.active');
+        const nextImage = activeImage.nextElementSibling || imageSelector[0];
+        removeActive();
+        nextImage.classList.add('active');
+    }, timer);
 
-clearInterval(timer);
+    clearInterval(timer);
+}, 6000);
+
+clearTimeout(1000);
