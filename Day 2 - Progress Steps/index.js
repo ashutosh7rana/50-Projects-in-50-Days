@@ -24,19 +24,19 @@ prev.addEventListener('click', () => {
 
 function update(button) {
     if (button === 'next') {
-        container.classList.remove('step-' + (currentActive - 1));
+        container.classList.remove('light-' + (currentActive - 1));
     } else if (button === 'prev') {
-        container.classList.remove('step-' + (currentActive + 1));
+        container.classList.remove('light-' + (currentActive + 1));
     }
-    container.classList.add('step-' + (currentActive));
+    container.classList.add('light-' + (currentActive));
     //progress.style.width = ((currentActive - 1) / (progressSteps.length - 1)) * 100 + '%';
-    progressSteps.forEach((step, index) => {        
-        if (index < currentActive) {
-            step.classList.add('active');            
-        } else {
-            step.classList.remove('active');
-        }
-    });
+    // progressSteps.forEach((step, index) => {        
+    //     if (index < currentActive) {
+    //         step.classList.add('active');            
+    //     } else {
+    //         step.classList.remove('active');
+    //     }
+    // });
 
     if (currentActive === 1) {
         prev.classList.add('disabled');

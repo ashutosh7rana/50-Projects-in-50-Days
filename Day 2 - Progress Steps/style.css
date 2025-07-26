@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #4caf50;
+    background-color: color-mix(in srgb, #4caf50 70%, white);;
 }
 
 .steps-container {
@@ -39,8 +39,23 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    border: 2px solid #ccc;
     z-index: 2;
+}
+
+.light-1 {
+    background-color: color-mix(in srgb, #4caf50 70%, white); /* Green */
+}
+
+.light-2 {
+    background-color: color-mix(in srgb, #187dcfff 70%, white); /* Blue */
+}
+
+.light-3 {
+    background-color: color-mix(in srgb, #ff9800 70%, white); /* Orange */
+}
+
+.light-4 {
+    background-color: color-mix(in srgb, #f44336 70%, white); /* Red */ 
 }
 
 .step-1 {
